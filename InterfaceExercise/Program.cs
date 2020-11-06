@@ -39,12 +39,21 @@ namespace InterfaceExercise
 
             //--Now, create objects of your 3 classes and give their members values;
             //Creatively display and organize their values
-            var porche = new Car() { CompanyName = "Porche", GasMileage = 40, NumOfSeats = 5, NumOfWheels = 4, Slogan = "Somethin bout being fancy IDK", TrailerCapability = false, TrunkSpace = 5, Year = 2018};
+            var porche = new Car() { CompanyName = "Porche", GasMileage = 40, NumOfSeats = 5, NumOfWheels = 4, Slogan = "Somethin bout being fancy IDK", TrailerCapability = false, TrunkSpace = 7, Year = 2018};
             var F250 = new Truck() { CompanyName = "Ford", GasMileage = 20, NumOfSeats = 5, NumOfWheels = 4, Slogan = "Be a BIG MAN TRUCK", Year = 2018, BedSize = 10, CarryWeight = 4000};
-            var jeep = new SUV() { CompanyName = "Jeep", GasMileage = 30, NumOfSeats = 4, NumOfWheels = 4, Slogan = "My horn goes'Jeep-Jeep'", Year = 2018, CargoHoldSpace = 3, RoofRack = true};
+            var jeep = new SUV() { CompanyName = "Jeep", GasMileage = 30, NumOfSeats = 4, NumOfWheels = 4, Slogan = "My horn goes'Jeep-Jeep'", Year = 2018, CargoHoldSpace = 5, RoofRack = true};
 
 
-
+            Console.WriteLine($"The Porche {porche.Year} by {porche.CompanyName} has a whopping {porche.GasMileage} MPG!");
+            Console.WriteLine($"{porche.NumOfSeats} seats!");
+            Console.WriteLine($"and a roomy trunk with {porche.TrunkSpace} cubic feet of space!");
+            Console.WriteLine($"");
+            Console.WriteLine($"Next we have the F250 {F250.Year} by {F250.CompanyName}! {F250.Slogan}");
+            Console.WriteLine($"{F250.GasMileage} MPG, and with a roomy cabin space fit for {F250.NumOfSeats}!");
+            Console.WriteLine($"It's carry weight is a MASSIVE {F250.CarryWeight} Lbs!");
+            Console.WriteLine($"");
+            Console.WriteLine($"Aaaaaand lastly we have the Jeep {jeep.Year} by Jeep! {jeep.Slogan}");
+            Console.WriteLine($"It's a Jeep... That's it");
 
         }
     }
