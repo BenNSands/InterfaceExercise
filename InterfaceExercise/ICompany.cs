@@ -6,5 +6,8 @@ namespace InterfaceExercise
 {
     interface ICompany
     {
+        public string Slogan { get; set; }
+        public string CompanyName { get; set; }
+
     }
 }
